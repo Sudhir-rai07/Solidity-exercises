@@ -11,6 +11,62 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_content",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "liker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_Tid",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_likeCount",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetLiked",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint16",
@@ -235,7 +291,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/02Tweet-require.sol": "TwitterStruct"
+			"contracts/06TwitterEvents.sol": "TwitterStruct"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -249,12 +305,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/02Tweet-require.sol": {
-			"keccak256": "0xa296641ecc66274ebb2a9ab8a73816d7c0b8781297c185b92900ebc047711115",
+		"contracts/06TwitterEvents.sol": {
+			"keccak256": "0x6c7d4769504075047d95d8a49dcf06d2b9ed80b1c8d50c55b9cad229b6bc09f1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0bdf9e84bed9d32e04c304a03be947553495343bb613b1414ee9d0c3c95bbe21",
-				"dweb:/ipfs/QmTnX4M1Z8ZvojutHCEdS3Jz8FRAxHsiSPEL4LFmqu5vqW"
+				"bzz-raw://3c1e91922dc949c67ed1c0e84e0f2ef6590c3e37ff046b82f590d4757722715a",
+				"dweb:/ipfs/QmXd4RGH5sUo2H2ED1tEvd6wzFUNnQHjrg8fWvnfa5dc1j"
 			]
 		}
 	},
